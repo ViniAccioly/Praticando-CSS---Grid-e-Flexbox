@@ -47,6 +47,16 @@
     align-self: center;
 }
 
+.rodape {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.rodape__logo{
+    align-self: end;
+}
+
 @media screen and (min-width: 720px){
     .menu{
         column-gap: 75px;
@@ -98,4 +108,41 @@
     .agenda__lista{
         justify-content: center;
     }
+
+    .categorias {
+        display: grid;
+        grid-template-areas:
+            "titulo titulo"
+            "lista destaque"
+            "lista imagem";
+    }
+
+    .categorias__titulo {
+        grid-area: titulo;
+    }
+    
+    .categorias__lista {
+        grid-area: lista;
+     }
+    
+    .categorias__destaques {
+        grid-area: destaque;
+    }
+    
+    .categorias__imagem {
+        grid-area: imagem;
+    }
+    }
+
+    .categorias {
+        display: grid;
+        grid-template-areas:
+            "titulo titulo"
+            "lista destaque"
+            "lista imagem";
+row-gap: 1rem;
+        column-gap: 1.5rem;
+       grid-template-columns: calc(50% - 0.75rem);
+       grid-template-rows: auto 1fr auto;
+}
 }

@@ -42,7 +42,8 @@
 }
 
 .eventos__item h3{
-    grid-area: titulo
+    grid-area: titulo;
+    align-self: center;
 }
 
 .eventos__item h4{
@@ -51,6 +52,7 @@
 
 .eventos__item h5{
     grid-area: localizacao;
+    align-self: end;
 }
 
 .eventos__item button{
